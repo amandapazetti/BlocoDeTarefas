@@ -1,0 +1,68 @@
+$light-background: #ffffff;
+$light-color: #000000;
+$dark-background: #333333;
+$dark-color: #ffffff;
+
+body.light {
+  background-color: $light-background;
+  color: $light-color;
+}
+
+body.dark {
+  background-color: $dark-background;
+  color: $dark-color;
+}
+
+.task-container {
+  margin-bottom: 10px;
+  input[type="text"] {
+    margin-right: 10px;
+  }
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  border: 1px solid #cccccc; /* Adiciona uma borda ao redor da tarefa */
+  padding: 5px; /* Adiciona um espaço interno à tarefa */
+  border-radius: 5px;
+  &-actions {
+    display: flex;
+    align-items: center;
+    button {
+      margin-left: 5px;
+    }
+  }
+}
+
+.task-done {
+  text-decoration: line-through;
+  color: #888888;
+}
+
+h2 {
+  font-size: 1em; /* Você pode ajustar este valor conforme necessário */
+}
+
+h1 {
+  font-size: 1.5em; /* Você pode ajustar este valor conforme necessário */
+  text-align: center;
+}
+
+body {
+  text-align: center;
+}
+
+.container {
+  background-color: #023047;
+  color: #888888;
+  border: 2px solid #f5ebe0;
+  box-shadow: 0 0 10px #219ebc;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 20px auto;
+  max-width: 400px;
+
+}

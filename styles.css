@@ -1,0 +1,74 @@
+@charset "UTF-8";
+body.light {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.dark {
+    background-color: #023047;
+    color: #ffffff;
+}
+
+.task-container {
+    margin-bottom: 10px;
+}
+
+.task-container input[type="text"] {
+    margin-right: 10px;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    border: 1px solid #cccccc;
+    /* Adiciona uma borda ao redor da tarefa */
+    padding: 5px;
+    /* Adiciona um espaço interno à tarefa */
+    border-radius: 5px;
+}
+
+.task-actions {
+    display: flex;
+    align-items: center;
+}
+
+.task-actions button {
+    margin-left: 5px;
+    margin-left: 5px;
+    background-color: transparent; /* Remove o fundo branco */
+    border: none; /* Remove a borda */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+.task-done {
+    text-decoration: line-through;
+    color: #888888;
+}
+
+h2 {
+    font-size: 1em;
+    /* Você pode ajustar este valor conforme necessário */
+}
+
+h1 {
+    font-size: 1.5em;
+    /* Você pode ajustar este valor conforme necessário */
+    text-align: center;
+}
+
+body {
+    text-align: center;
+}
+
+.container {
+    background-color: #023047;
+    color: #d8caca;
+    border: 2px solid #f5ebe0;
+    box-shadow: 0 0 10px #015c72;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 400px;
+}
