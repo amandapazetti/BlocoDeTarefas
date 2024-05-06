@@ -75,17 +75,13 @@ document.addEventListener('DOMContentLoaded', function () {
             // Adiciona a classe 'task-actions' ao novo elemento div
             taskActions.classList.add('task-actions');
 
-            // Cria um novo botão para deletar a tarefa
-            const deleteButton = document.createElement('button');
-
-            // Define o texto do botão de deletar como um emoji de lixeira
-            deleteButton.textContent = '🗑️';
-
-            // Adiciona um evento de clique ao botão de deletar
-            deleteButton.addEventListener('click', function () {
-                // Chama a função para deletar a tarefa passando o elemento div da tarefa como argumento
-                deleteTask(taskDiv);
+            const deleteButton = document.createElement('button'); // Cria um elemento de botão
+            deleteButton.innerHTML = '<i class="fa-solid fa-trash" style="color: #99c6cc;"></i>'; // Define o conteúdo HTML do botão como um ícone estilizado de lixeira
+            deleteButton.addEventListener('click', function () { // Adiciona um evento de clique ao botão
+                deleteTask(taskDiv); // Chama uma função quando o botão é clicado
             });
+
+
             // Cria um novo elemento botão para a edição da tarefa
             const editButton = document.createElement('button'); // Adiciona o botão de edição
             // Define o conteúdo HTML do botão de edição como um ícone de lápis estilizado
