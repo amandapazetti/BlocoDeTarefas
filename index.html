@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+<head> <!--Contém os metadados sobre o documento-->
+    <meta charset="UTF-8"><!--Define cum conjunto de caracteres-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do List</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>To Do List</title> <!--Define o título da página exibido na aba do navegador -->
+    <link rel="stylesheet" href="styles.css"> <!--Importando o arquivo css para estilizar a pagina-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!--Importa icones de um site-->
+
 </head>
 <body class="light">
-<div class="container">
-    <h1>TASK BLOCK</h1>
+<!--Abre o elemento body e define a classe como "light". Essa classe pode ser usada para alternar entre temas claros e escuros.-->
+<div class="container"><!--Abertura de container-->
+    <h1>TASK BLOCK</h1><!--Define um título principal para a página.-->
     <div class="task-container">
+        <!--Abre um contêiner para o formulário de entrada de tarefas e define uma classe como "task-container"-->
         <input type="text" id="taskInput" placeholder="Enter task...">
-        <button id="addTaskButton">+</button>
+        <!-- Cria uma caixa de texto para o usuário inserir novas tarefas.-->
+        <button id="addTaskButton">+</button><!--Cria um botão para adicionar novas tarefas.-->
     </div>
-    <div id="tasks">
+    <div id="tasks"><!--Abre um contêiner para listar as tarefas a serem feitas e define um id como "tasks"-->
         <h2>Tasks To Do: <span id="taskCount">0</span></h2>
+        <!--Define um título para as tarefas a serem feitas e exibe o número de tarefas pendentes.-->
     </div>
-    <div id="tasksDone">
+    <div id="tasksDone"><!--Abre um contêiner para listar as tarefas concluídas e define um id como "tasksDone".-->
         <h2>Tasks Done: <span id="doneCount">0</span></h2>
+        <!--Define um título para as tarefas concluídas e exibe o número de tarefas concluídas.-->
     </div>
     <button id="toggleThemeButton">Toggle Theme</button>
+    <!--Cria um botão para alternar entre os temas claro e escuro. e define uma classe como "toggleThemeButton"-->
 </div>
-<script src="javascript.js"></script>
-
-
+<script src="javascript.js"></script><!-- Importa o arquivo JavaScript-->
 </body>
-
 </html>
