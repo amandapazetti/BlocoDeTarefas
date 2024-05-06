@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 completeTask(taskDiv);
             });
 
-            // Adiciona o botão de exclusão ao conjunto de ações da tarefa
+            // Adiciona o botão de exclusão/edição/adicionar ao conjunto de ações da tarefa
             taskActions.appendChild(deleteButton);
             taskActions.appendChild(editButton);
             taskActions.appendChild(doneButton);
